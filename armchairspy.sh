@@ -1,5 +1,5 @@
 #!/bin/bash
-# not using set -euo pipefail because it will not allow script to work
+
 # if there is a need to send this script into background, just add & in the end
 # be aware that if you put an interval to 2 seconds and accidentaly told bash
 # to run the script, you may not be able to stop it without killing the process
