@@ -7,8 +7,8 @@
 
 function dwnld {
 	$(wget -mkEpnp -e robots="off" $1)              # saving target
-  name=$(echo $1 | cut -d "/" -f3)                # getting name of the folder
-  mv ./$name ./$name"_"$(date "+%d%b%Y%a%H%m%S")  # replacing previous name with the one with date
+	name=$(echo $1 | cut -d "/" -f3)                # getting name of the folder
+	mv ./$name ./$name"_"$(date "+%d%b%Y%a%H%m%S")  # replacing previous name with the one with date
 }
 
 while [[ $# -gt 0 ]]; do
