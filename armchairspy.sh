@@ -6,7 +6,7 @@
 # or first bringing it to the foreground and exiting it
 
 function dwnld {
-	$(wget -mkEpnp -e robots="off" $1 &> /dev/null/)              # saving target
+	$(wget -mkEpnp -e robots="off" $1 &> /dev/null/)              # saving target and hiding wget's output
 	name=$(echo $1 | cut -d "/" -f3)                # getting name of the folder
 	mv ./$name ./$name"_"$(date "+%d%b%Y%a%H%m%S")  # replacing previous name with the one with date
 }
